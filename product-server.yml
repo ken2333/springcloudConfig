@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+#服务的名称
+spring:
+  zipkin:
+    base-url: http://192.168.100.2:9411
+    enabled: true
+  application:
+    name: product-service
+    #probability是配置追踪日志的采集的概率
+  sleuth:
+    sampler:
+      probability: 1
+
+#指定注册中心的地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+

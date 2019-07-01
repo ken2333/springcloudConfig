@@ -1,5 +1,4 @@
-server:
-  port: 8029
+
 #服务的名称
 spring:
   zipkin:
